@@ -1,0 +1,52 @@
+﻿<Window x:Class="Hosler_SimpleCalculator.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hosler_SimpleCalculator"
+        mc:Ignorable="d" Background="LightBlue"
+        Title="HelpWindow" Height="450" Width="800">
+    <Grid
+        Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label
+            Grid.Row="0"
+            Content="Help Screen"
+            FontSize="30"
+            HorizontalAlignment="Center"
+            Foreground="DarkCyan"/>
+        <TextBlock
+            Grid.Row="1"
+            Text="Population density is a measure of how many people live in a certain area. The higher the density, the more people in that space. This is usually measure in either square miles, or square kilometers."
+            Margin="10"
+            Foreground="DarkCyan"
+            FontSize="23"
+            TextWrapping="Wrap"/>
+        <TextBlock
+            Grid.Row="2"
+            Text="To use the calculator, type approximated values in the corresponding areas, choose unit type, and click calculate. To have it to calculate correctly, please make sure your unit type is the same as the selected one."  
+            Margin="10"
+            FontSize="23"
+            Foreground="DarkCyan"
+            TextWrapping="Wrap"/>
+        <Button
+            x:Name="Button_Exit"
+            Content="Exit"
+            Width="auto"
+            Height="auto"
+            Grid.Row="3"
+            Margin="10"
+            FontSize="25"
+            Background="LightBlue"
+            Foreground="DarkCyan"
+            Click="Button_Exit_Click"/>
+    </Grid>
+</Window>
